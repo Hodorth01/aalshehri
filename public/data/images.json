@@ -1,0 +1,168 @@
+{
+  "Artworks":
+    {
+      "hero": {
+        "src": "https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/7eb3095b-f3c8-4adb-b64c-07b6b7a46ad0/_DSC0405-3.jpg?format=2500w",
+        "title": "Art works",
+        "alt": " Art works"
+      },
+      "images": [
+        {
+        "src": "./../public/images/_DSC0904-4.jpg",
+        "alt": "alt",
+        "hash":"LAFh^:.800D%00E1t6xuA3D%~p-;"
+        },
+        {
+          "src": "./../public/images/24-70GM2.jpg",
+          "alt": "alt",
+          "hash": "LZEy#p%NRPRi~X%MR%Rj?^t7RjWV"
+        },
+        {
+          "src": "./../public/images/_DSC2628.jpg",
+          "alt": "alt",
+          "hash": "T5A^2b-E00~ood8|EHV]ojNDR.xJ"
+        },
+        {
+          "src": "./../public/images/_DSC2732-Edit-3.jpg",
+          "alt": "alt",
+          "hash": "T89ROk%OpIF#RiMw0LROR5~Uxv-:"
+
+        },
+        {
+          "src": "./../public/images/_DSC6301.jpg",
+          "alt": "alt",
+          "hash": "T6KdxpET00J=n}Ri00-n~TRmxv?F"
+
+        },
+        {
+          "src": "./../public/images/DSC00535-4.jpg",
+          "alt": "alt",
+          "hash": "T4K-8^000F~Wx]Iu0KS*V=war:Ny"
+
+        },
+        {
+          "src": "./../public/images/DSC00845-s.jpg",
+          "alt": "alt",
+          "hash": "TIG9Kt00_Nvw9abx_NxaxCksNIRj"
+
+        },
+        {
+          "src": "./../public/images/GOTACaribou.jpg",
+          "alt": "alt",
+          "hash": "TkKBzXERRj.TRkoeZzoJoLx^j]f6"
+
+        }
+      ]
+    },
+
+  "MediaProjects":
+  {
+    "hero": {
+      "src": "https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/722333aa-1d32-43e3-854f-db6b4cf5669e/untitled+shoot20190410-_NHL2423.jpg?format=1500w",
+      "title": "Media Projects",
+      "alt": " Media Projects"
+    },
+    "images": [
+      {
+        "src": "./../public/images/_DSC0904-4.jpg",
+        "alt": "alt",
+        "hash":"LAFh^:.800D%00E1t6xuA3D%~p-;"
+      },
+      {
+        "src": "./../public/images/24-70GM2.jpg",
+        "alt": "alt",
+        "hash": "LZEy#p%NRPRi~X%MR%Rj?^t7RjWV"
+      },
+      {
+        "src": "./../public/images/_DSC2628.jpg",
+        "alt": "alt",
+        "hash": "T5A^2b-E00~ood8|EHV]ojNDR.xJ"
+      },
+      {
+        "src": "./../public/images/_DSC2732-Edit-3.jpg",
+        "alt": "alt",
+        "hash": "T89ROk%OpIF#RiMw0LROR5~Uxv-:"
+
+      },
+      {
+        "src": "./../public/images/_DSC6301.jpg",
+        "alt": "alt",
+        "hash": "T6KdxpET00J=n}Ri00-n~TRmxv?F"
+
+      },
+      {
+        "src": "./../public/images/DSC00535-4.jpg",
+        "alt": "alt",
+        "hash": "T4K-8^000F~Wx]Iu0KS*V=war:Ny"
+
+      },
+      {
+        "src": "./../public/images/DSC00845-s.jpg",
+        "alt": "alt",
+        "hash": "TIG9Kt00_Nvw9abx_NxaxCksNIRj"
+
+      },
+      {
+        "src": "./../public/images/GOTACaribou.jpg",
+        "alt": "alt",
+        "hash": "TkKBzXERRj.TRkoeZzoJoLx^j]f6"
+
+      }
+    ]
+  },
+
+  "Weddings":
+  {
+    "hero": {
+      "src": "https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/e4e86881-febf-4ed6-b6f8-4d0369d3e095/_DSC7623-Edit.jpg?format=2500w",
+      "title": "Weddings",
+      "alt": " Weddings"
+    },
+    "images": [
+      {
+        "src": "./../public/images/_DSC0904-4.jpg",
+        "alt": "alt",
+        "hash":"LAFh^:.800D%00E1t6xuA3D%~p-;"
+      },
+      {
+        "src": "./../public/images/24-70GM2.jpg",
+        "alt": "alt",
+        "hash": "LZEy#p%NRPRi~X%MR%Rj?^t7RjWV"
+      },
+      {
+        "src": "./../public/images/_DSC2628.jpg",
+        "alt": "alt",
+        "hash": "T5A^2b-E00~ood8|EHV]ojNDR.xJ"
+      },
+      {
+        "src": "./../public/images/_DSC2732-Edit-3.jpg",
+        "alt": "alt",
+        "hash": "T89ROk%OpIF#RiMw0LROR5~Uxv-:"
+
+      },
+      {
+        "src": "./../public/images/_DSC6301.jpg",
+        "alt": "alt",
+        "hash": "T6KdxpET00J=n}Ri00-n~TRmxv?F"
+
+      },
+      {
+        "src": "./../public/images/DSC00535-4.jpg",
+        "alt": "alt",
+        "hash": "T4K-8^000F~Wx]Iu0KS*V=war:Ny"
+
+      },
+      {
+        "src": "./../public/images/DSC00845-s.jpg",
+        "alt": "alt",
+        "hash": "TIG9Kt00_Nvw9abx_NxaxCksNIRj"
+
+      },
+      {
+        "src": "./../public/images/GOTACaribou.jpg",
+        "alt": "alt",
+        "hash": "TkKBzXERRj.TRkoeZzoJoLx^j]f6"
+
+      }
+    ]  }
+}

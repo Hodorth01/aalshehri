@@ -9,7 +9,7 @@ export const Header = ()=> {
         <Container>
           <Navbar.Brand href="/">Aalshehri</Navbar.Brand>
           <Nav className="">
-            <Nav.Link href="#home">Gallery</Nav.Link>
+            <Nav.Link href="/gallary">Gallery</Nav.Link>
             <Nav.Link href="#features">About</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
           </Nav>
