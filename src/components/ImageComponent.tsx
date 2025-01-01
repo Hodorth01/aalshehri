@@ -17,7 +17,7 @@ export const ImageComponent = ({ src, alt, hash, ...props }:ImageProps) => {
     },[src])
     return (
         <>
-            <div style={{display: isLoaded ? "none" : "inline"}}>
+            <div style = {{display: isLoaded ? "none" : "inline"}}>
                 <Blurhash
                     hash={hash}
                     height={400}
@@ -30,7 +30,7 @@ export const ImageComponent = ({ src, alt, hash, ...props }:ImageProps) => {
 
 
             <img
-                style={{display: !isLoaded ? "none" : "inline"}}
+                style = {{display: !isLoaded ? "none" : "inline"}}
                 className="my-2"
                 src={src}
                 alt={alt}

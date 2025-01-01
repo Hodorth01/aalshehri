@@ -2,9 +2,9 @@
 import Modal from "react-modal";
 import { useParams } from 'react-router-dom';
 import { useQuery } from "@tanstack/react-query";
-import { Hero } from "./components/Hero";
-import { ImageComponent } from "./components/ImageComponent.tsx";
-import {Model} from "./components/Model.tsx";
+import { Hero } from "./../components/Hero";
+import { ImageComponent } from "./../components/ImageComponent.tsx";
+import {Model} from "./../components/Model.tsx";
 import {useState} from "react";
 
 Modal.setAppElement("#root"); // For accessibility
@@ -17,13 +17,8 @@ interface ImageItem {
     alt: string;
 }
 
-// Define types for the hero section and the category data
+// Define types for the category data
 interface CategoryData {
-    hero: {
-        src: string;
-        title: string;
-        alt: string;
-    };
     images: ImageItem[];
 }
 
@@ -80,16 +75,20 @@ const ImagesPage = () => {
             </div>
             <div>
                 {/* Image Thumbnails */}
-                <div className="list mx-3 mt-5 pt-3">
+                <div className="list mx-3 mt-5 pt-3" data-aos="zoom-in" data-aos-delay="300" >
                     {categoryData?.images ? (
                         categoryData.images.map((item: ImageItem, index: number) => (
+                            <div className="image" key={index} >
                                 <ImageComponent
-                                    key={index}
                                     src={item.src}
                                     alt={`Image ${index + 1}`}
                                     hash={item.hash}
                                     onClick={() => openModal(index)}
+
+
                                 />
+
+                            </div>
 
                         ))
                     ) : (
