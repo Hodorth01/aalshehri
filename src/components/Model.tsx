@@ -1,32 +1,33 @@
-
 interface Image {
-    src: string; // Assuming each image has a `src` property
+    src: string; // The source URL of the image
 }
 
 interface CategoryData {
-    images: Image[]; // `images` is an array of `Image` objects
+    images: Image[]; // An array of images to be displayed in the modal
 }
 
 interface Props {
-    categoryData: CategoryData ; // Updated type for `categoryData`
-    isModalOpen: boolean;
-    currentImageIndex: number;
-    setIsModalOpen: (value: boolean | ((prevState: boolean) => boolean)) => void;
-    setCurrentImageIndex: (value: number | ((prevState: number) => number)) => void;
+    categoryData: CategoryData; // The category data containing images
+    isModalOpen: boolean; // Whether the modal is open or closed
+    currentImageIndex: number; // The index of the current image being displayed
+    setIsModalOpen: (value: boolean | ((prevState: boolean) => boolean)) => void; // Function to set modal open state
+    setCurrentImageIndex: (value: number | ((prevState: number) => number)) => void; // Function to update the current image index
 }
 
-
 export const Model = (props: Props) => {
+    // Function to close the modal
     const closeModal = () => {
         props.setIsModalOpen(false);
     };
 
+    // Function to show the next image
     const nextImage = () => {
         if (props.categoryData.images) {
             props.setCurrentImageIndex((prev) => (prev + 1) % props.categoryData.images.length);
         }
     };
 
+    // Function to show the previous image
     const prevImage = () => {
         if (props.categoryData.images) {
             props.setCurrentImageIndex((prev) => (prev - 1 + props.categoryData.images.length) % props.categoryData.images.length);
@@ -36,8 +37,10 @@ export const Model = (props: Props) => {
     return (
         <>
             {props.isModalOpen && props.categoryData.images && (
+                // Modal overlay
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        {/* Close button */}
                         <button className="close-btn" onClick={closeModal}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +56,8 @@ export const Model = (props: Props) => {
                                 <line x1="6" y1="6" x2="18" y2="18" />
                             </svg>
                         </button>
+
+                        {/* Previous image button */}
                         <button className="prev-btn" onClick={prevImage}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +72,15 @@ export const Model = (props: Props) => {
                                 <polyline points="15 18 9 12 15 6" />
                             </svg>
                         </button>
+
+                        {/* Image being displayed in the modal */}
                         <img
                             src={props.categoryData.images[props.currentImageIndex].src}
-                            alt={`Image ${props.currentImageIndex + 1}`}
+                            alt={`Image ${props.currentImageIndex + 1}`} // Alt text for accessibility
                             className="modal-image"
                         />
+
+                        {/* Next image button */}
                         <button className="next-btn" onClick={nextImage}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

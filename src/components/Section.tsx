@@ -13,11 +13,7 @@ export const Section = (props:Props)=>{
     return(
         <>
             <section>
-                <Parallax
-                    bgImage={props.bgImage}
-                    strength={props.strength}
-                    // style={{filter: "brightness(80%)"}}
-                >
+                <Parallax bgImage={props.bgImage} strength={props.strength}>
                     <div style={{height: props.height, backgroundSize: 'cover', backgroundPosition: "center",}}
                          className='section-title mx-3 d-flex flex-column justify-content-center align-items-start p-lg-5 p-3 '>
                         <h2 className="text-white ">{props.title}</h2>

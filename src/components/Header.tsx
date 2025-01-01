@@ -19,7 +19,7 @@ export const Header = ()=> {
         <Container data-aos="fade-in" data-aos-delay="300">
           <Navbar.Brand href="/" >Aalshehri</Navbar.Brand>
           <Nav className="">
-            <Nav.Link href="/gallary">Gallery</Nav.Link>
+            <Nav.Link href="/gallery">Gallery</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>

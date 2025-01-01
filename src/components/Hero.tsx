@@ -1,4 +1,3 @@
-import {Header} from "./../components/Header"
 
 interface Props {
     src: string;
@@ -20,8 +19,6 @@ export const Hero = (props:Props)  =>{
                     </div>
                 </div>
             </header>
-            <Header/>
-
         </>
     )
 }
