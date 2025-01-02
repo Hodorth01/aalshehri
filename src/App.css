@@ -7,6 +7,8 @@
   --f-primary:1.7rem;
   --f-title:2.25rem;
   --f-subtitle:2rem;
+  font-family: 'Catamaran', sans-serif;
+
 }
 .link{
   color: var(--c-primary);
@@ -289,7 +291,7 @@ font-weight: 300;
   height: 80px;
   width: 80px;
   margin: 15px 6px;
-  line-height: 75px;
+  line-height: 80px;
   border-radius: 50%;
   color: #000000;
   background-color: var(--c-primary);
@@ -340,7 +342,6 @@ hr {
 .error-container {
   text-align: center;
   font-size: 106px;
-  font-family: 'Catamaran', sans-serif;
   font-weight: 800;
   margin: 70px 15px;
 }
@@ -451,10 +452,7 @@ body {
   background-color: #FDFAF5;
   margin-bottom: 50px;
 }
-html, button, input, select, textarea {
-  font-family: 'Montserrat', Helvetica, sans-serif;
 
-}
 .title404 {
   text-align: center;
   margin: 30px 15px;
