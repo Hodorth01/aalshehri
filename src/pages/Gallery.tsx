@@ -1,34 +1,38 @@
-import {Hero} from "./../components/Hero";
-import {Category} from "./../components/Category";
+import Hero from "./../components/Hero";
+import Category from "./../components/Category";
 
  const Gallery = () => {
     return (
         <>
+
             <div>
                 <Hero
-                    src="https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/8612f7da-c3b5-449b-a469-bd86560c9253/P9050080.jpg"
-                    header={"Gallery"}
+                    src="../images/hero/categories-2000x1000.jpg"
+                    header="Gallery"
+                    srcset="../images/hero/categories-750x370.jpg 550w, ../images/hero/categories-1000x500.jpg 1000w, ../images/hero/categories-1600x800.jpg 1600w , ../images/hero/categories-2000x1000.jpg 2000w"
+                    sizes="(max-width: 576px) 750px,(max-width: 992px) 1000px,(max-width: 1200px) 1600px, 2000px "
                 />
             </div>
             <div className="container d-flex flex-wrap mw-100 m-0">
                 <Category
-                    src="https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/1647028830873-G9S1Y8THORSY3GJIH40W/DSC02238-Edit-3.jpg?format=1000w"
+                    src="../images/Categories/PSX_20240525_025812-500x282.jpg"
                     title="Artworks"
                     alt="Artworks"
                     path="/images/Artworks"
                 />
                 <Category
-                    src="https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/1647027416425-EYWFTE83V8J2QRT9GD8Y/untitled-8648-3.jpg?format=1000w"
-                    title="Media Projects"
-                    alt="Media Projects"
-                    path="/images/MediaProjects"
+                    src="../images/Categories/DSC04425UYFRT-500X333.jpg"
+                    title="Media"
+                    alt="Media"
+                    path="/images/Media"
                 />
                 <Category
-                    src="https://images.squarespace-cdn.com/content/v1/5ee8d403805d5556cb8200b7/1647028100130-X31FEB5XZMALFTLYIBQQ/DSC05062-4.jpg?format=1000w"
+                    src="../images/Categories/DSC04399-500X333.jpg"
                     title="Weddings"
                     alt="Weddings"
                     path="/images/Weddings"
                 />
+
             </div>
         </>
     );

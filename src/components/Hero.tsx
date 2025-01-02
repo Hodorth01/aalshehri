@@ -2,18 +2,20 @@
 interface Props {
     src: string;
     header: string;
+    srcset: string;
+    sizes: string;
 }
-export const Hero = (props:Props)  =>{
+const Hero = (props:Props)  =>{
 
     return(
         <>
             <header className="hero">
                 <div className='hero-container'>
-                    <img className="hero-image" src={props.src} alt={props.header} />
+                    <img className="hero-image" src={props.src} alt={props.header} srcSet={props.srcset} sizes={props.sizes} />
                     <div className='mask h-100'>
                         <div className='d-flex justify-content-center align-items-center h-100'>
-                            <div className='' style={{fontSize:'2em'}} data-aos="zoom-in" data-aos-delay={200}>
-                                <p className="text-white" style={{fontSize:'2em'}}>{props.header}</p>
+                            <div  data-aos="zoom-in" data-aos-delay={200}>
+                                <p className="hero-text" >{props.header}</p>
                             </div>
                         </div>
                     </div>
@@ -22,3 +24,4 @@ export const Hero = (props:Props)  =>{
         </>
     )
 }
+export default Hero;

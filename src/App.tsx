@@ -7,12 +7,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Lazy loading the page components
-const Home = lazy(() => import("./pages/Home.tsx"));
-const Gallery = lazy(() => import("./pages/Gallery.tsx"));
-const ImagesPage = lazy(() => import("./pages/ImagesPage.tsx"));
-const About = lazy(() => import("./pages/About.tsx"));
-const Contact = lazy(() => import("./pages/Contact.tsx"));
-const NotFound = lazy(() => import('./pages/NotFound.tsx'));
+const Home = lazy(() => import("./pages/Home"));
+const Gallery = lazy(() => import("./pages/Gallery"));
+const ImagesPage = lazy(() => import("./pages/ImagesPage"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
     return (
