@@ -11,7 +11,7 @@ import { useState } from "react";
 Modal.setAppElement("#root");
 
 // Define the base URL for fetching image data
-const BASE_URL = "/public/data/images.json";
+const BASE_URL = "/data/images.json";
 
 // Interface to define the structure of each image item
 interface ImageItem {
